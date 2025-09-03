@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll(".card");
 
     cards.forEach(card => {
-        card.addEventListener('click', () => {
-            alert(`You selected: ${card.textContent.trim()}`);
+        card.addEventListener("click", () => {
+            alert(`You clicked on: ${card.textContent.trim()}`);
         });
     });
 });
