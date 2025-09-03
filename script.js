@@ -1,7 +1,9 @@
-// Basic add to cart functionality
-document.querySelectorAll('.product-card button').forEach(button => {
-    button.addEventListener('click', () => {
-        alert('Added to cart!');
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            alert(`You selected: ${card.textContent.trim()}`);
+        });
     });
 });
-
